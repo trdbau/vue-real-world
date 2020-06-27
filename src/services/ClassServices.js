@@ -1,14 +1,14 @@
-import axios from 'axios';
+import axios from 'axios'
 
 export default class RESTService {
   constructor(instance = axios) {
-    this.axios = instance;
+    this.axios = instance
   }
 
   get(request) {
     return this.execute({
       methods: 'get',
       ...request,
-    });
+    })
   }
 }

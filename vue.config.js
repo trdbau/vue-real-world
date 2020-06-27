@@ -1,6 +1,6 @@
 module.exports = {
   chainWebpack(config) {
-    config.plugins.delete('prefetch');
+    config.plugins.delete('prefetch')
   },
   productionSourceMap: false,
   devServer: {
@@ -11,4 +11,5 @@ module.exports = {
       errors: true,
     },
   },
-};
+  lintOnSave: false,
+}
